@@ -125,7 +125,7 @@ class AdminController extends Controller
                     ->with('groomer') 
                     ->get();
 
-        return view('admin.Maps', array_merge([
+        return view('admin.maps', array_merge([
             'orders' => $orders
         ], $this->getLayoutDependencies()));
     }
